@@ -23,7 +23,7 @@ body{
 }
 
 .container{
-  flex: 90%;
+  flex-basis: 800px;
   height:400px;
   background-color: rgb(255, 247, 240);
   margin:10px;
@@ -83,6 +83,7 @@ body{
 }
 
 .navbar{
+  height: 48px;
   font-size:25px;
   display:block;
   border-bottom: 3px solid rgb(168, 131, 30);
@@ -91,6 +92,7 @@ body{
 
 .navbar a{
   color:rgb(143, 121, 57);
+  transition: font-size 0.25s ease-out;
 }
 
 .navbar .default{

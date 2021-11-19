@@ -61,7 +61,7 @@ function App(props) {
   return (
     <Router>
     <div className="App">
-      <div className="container table">
+      <div className="container">
         <div className="container-profile cell">
           <div className="nama row">
             {props.name}
