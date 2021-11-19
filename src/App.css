@@ -1,38 +1,154 @@
+body{
+  height:100%;
+}
+
 .App {
+  width:100%;
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:bisque;
 }
 
-.App-link {
-  color: #61dafb;
+
+.row{
+  display:table-row;
+  padding-top:1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell{
+  display:table-cell;
+}
+
+.container{
+  flex: 90%;
+  height:400px;
+  background-color: rgb(255, 247, 240);
+  margin:10px;
+  border-radius:15px;
+  padding: 30px 10px;
+  display:flex;
+}
+
+.container-profile{
+  flex:30%;
+  border-right: 3px dotted rgb(168, 131, 30);
+}
+
+.container-details{
+  flex:70%;
+}
+
+.nama{
+  height:50px;
+  font-size:30px;
+  font-family:  Futura, "Trebuchet MS", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.profile img{
+  padding-top:10px;
+  padding-bottom:10px;
+  height:200px;
+  align-self: center; 
+  border-top: 3px solid rgb(168, 131, 30);
+  border-bottom: 3px solid rgb(168, 131, 30);
+}
+
+.icons{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.icons img{
+  height:30px;
+  align-self: center;
+  margin-top: 5px;
+  margin-left: 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.navbar{
+  font-size:25px;
+  display:block;
+  border-bottom: 3px solid rgb(168, 131, 30);
+  margin: 0px 10px
+}
+
+.navbar a{
+  color:rgb(143, 121, 57);
+}
+
+.navbar .default{
+  padding-left:5px;
+  padding-right:5px;
+  text-decoration: none;
+}
+
+.navbar .active{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:35px;
+  pointer-events: none;
+  color:rgb(36, 28, 3);
+}
+
+.content{
+  display:block;
+  text-align: center;
+  margin:10px;
+  height:80%;
+  background-color: aliceblue;
+}
+
+.content .text{
+  padding:10px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.scrollable{
+  text-align: left;
+  margin:10px;
+  height:inherit;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollable::-webkit-scrollbar{
+  display: none;
+}
+.edu-header{
+  height: 25px;
+  display: block;
+}
+.edu-details{
+  font-size: 15px;
+
+}
+h3, h4, hr{
+  margin:0px;
+}
+h3{
+  float:left;
+}
+h4{
+  float:right;
+}
+hr{
+  float:none;
 }
