@@ -23,7 +23,7 @@ body{
 }
 
 .container{
-  flex-basis: 800px;
+  flex-basis: 850px;
   height:400px;
   background-color: rgb(255, 247, 240);
   margin:10px;
@@ -140,7 +140,6 @@ body{
 }
 .edu-details{
   font-size: 15px;
-
 }
 h3, h4, hr{
   margin:0px;
@@ -153,4 +152,17 @@ h4{
 }
 hr{
   float:none;
+}
+.skill{
+  width:inherit;
+  height:inherit;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.skill img{
+  width:100px;
+  height:auto;
+  align-self:center;
 }

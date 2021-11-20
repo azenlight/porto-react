@@ -47,12 +47,26 @@ function Edu() {
     </div>
     );
 }
+
 function Portofolios() {
   return <h2>Portofolios</h2>;
 }
+
 function Skills() {
-  return <h2>Skills</h2>;
+  const array=["https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png",
+               "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png",
+               "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+  ]
+  return (
+   <div className="skill">
+      {array.map(array=>(
+        <img src={array}></img>
+      ))
+    }
+   </div> 
+  );
 }
+
 function Contact() {
   return <h2>Contact</h2>;
 }
