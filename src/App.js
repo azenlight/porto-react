@@ -49,7 +49,48 @@ function Edu() {
 }
 
 function Portofolios() {
-  return <h2>Portofolios</h2>;
+  return (
+    <div className="scrollable">
+      <div className="porto-container">
+        <div className="porto-img">
+          <img src="https://scontent.fcgk18-1.fna.fbcdn.net/v/t39.30808-6/217041259_1302707083460393_5880006625345283172_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGQ1LDOt-rf5P9fAOWXIkVINo1G1SzOw_U2jUbVLM7D9VzWiGYQk6PuC2tvhlm5frhqbms_orqTqy4R5n4bFXxC&_nc_ohc=TuKhiCYhhBMAX-xbNmi&_nc_ht=scontent.fcgk18-1.fna&oh=ca40301b14d27f38e771693ebc82585b&oe=619B895A"/>
+        </div>
+        <div className="porto-metadata">
+            <h3>Portofolio Card</h3>
+            <hr/>
+            This Project is about testing all feature of JSX, react,
+            and integration between files in ReactJs App. It also shows
+            my profile and education for reader.
+        </div>
+      </div>
+      
+      <div className="porto-container">
+        <div className="porto-img">
+          <img src="https://scontent.fcgk18-1.fna.fbcdn.net/v/t39.30808-6/217041259_1302707083460393_5880006625345283172_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGQ1LDOt-rf5P9fAOWXIkVINo1G1SzOw_U2jUbVLM7D9VzWiGYQk6PuC2tvhlm5frhqbms_orqTqy4R5n4bFXxC&_nc_ohc=TuKhiCYhhBMAX-xbNmi&_nc_ht=scontent.fcgk18-1.fna&oh=ca40301b14d27f38e771693ebc82585b&oe=619B895A"/>
+        </div>
+        <div className="porto-metadata">
+            <h3>Portofolio Card</h3>
+            <hr/>
+            This Project is about testing all feature of JSX, react,
+            and integration between files in ReactJs App. It also shows
+            my profile and education for reader.
+        </div>
+      </div>
+      
+      <div className="porto-container">
+        <div className="porto-img">
+          <img src="https://scontent.fcgk18-1.fna.fbcdn.net/v/t39.30808-6/217041259_1302707083460393_5880006625345283172_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGQ1LDOt-rf5P9fAOWXIkVINo1G1SzOw_U2jUbVLM7D9VzWiGYQk6PuC2tvhlm5frhqbms_orqTqy4R5n4bFXxC&_nc_ohc=TuKhiCYhhBMAX-xbNmi&_nc_ht=scontent.fcgk18-1.fna&oh=ca40301b14d27f38e771693ebc82585b&oe=619B895A"/>
+        </div>
+        <div className="porto-metadata">
+            <h3>Portofolio Card</h3>
+            <hr/>
+            This Project is about testing all feature of JSX, react,
+            and integration between files in ReactJs App. It also shows
+            my profile and education for reader.
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Skills() {
@@ -83,7 +124,7 @@ function App(props) {
           <div className="profile row">
             <img src={props.photoLink}></img>
           </div>
-          <div className="icons row">
+          <div className="icons">
             <a href={"https://github.com/"+props.github}><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img></a>
             <a href={"mailto:"+props.email+"?subject=Portofolio%20React&body=Hello%20Az,"}><img src="https://cdn-icons-png.flaticon.com/512/1782/1782765.png"></img></a>
           </div>

@@ -30,6 +30,7 @@ body{
   border-radius:15px;
   padding: 30px 10px;
   display:flex;
+  box-shadow:2px 2px 8px #000000;
 }
 
 .container-profile{
@@ -72,10 +73,12 @@ body{
   justify-content: center;
   align-content: center;
 }
-
-.icons img{
+.icons a{
+  display:flex;
+}
+.icons a img{
   height:30px;
-  align-self: center;
+  align-self: center; 
   margin-top: 5px;
   margin-left: 15px;
   background-color: white;
@@ -114,7 +117,7 @@ body{
   text-align: center;
   margin:10px;
   height:80%;
-  background-color: aliceblue;
+  background-color: none;
 }
 
 .content .text{
@@ -131,6 +134,7 @@ body{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
 .scrollable::-webkit-scrollbar{
   display: none;
 }
@@ -143,14 +147,14 @@ body{
 }
 h3, h4, hr{
   margin:0px;
-}
-h3{
+} /*remove margin*/
+.edu-header h3{
   float:left;
 }
-h4{
+.edu-header h4{
   float:right;
 }
-hr{
+.edu-header hr{
   float:none;
 }
 .skill{
@@ -165,4 +169,36 @@ hr{
   width:100px;
   height:auto;
   align-self:center;
+}
+.skill img:hover{
+  transform:scale(1.5);
+  transition: all 0.2s linear;
+}
+
+.porto-container{
+  margin-bottom:10px;
+  border:solid 1px;
+  height:100px;
+  display:flex;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.porto-img{
+  margin:5px;
+  flex-basis:20%;
+  text-align: center;
+}
+
+.porto-img img{
+  max-width:106px;
+  max-height:90px;
+}
+
+.porto-metadata{
+  margin:5px;
+  flex-basis:80%;
+}
+
+.porto-metadata hr{
+  margin-bottom:4px;
 }
